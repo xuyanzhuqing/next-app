@@ -1,4 +1,4 @@
-export default function Index({ ENV_VARIABLE }: {ENV_VARIABLE: string}) {
+export default function Index() {
 
   console.info(
     'NEXT_PUBLIC_ 开头的可以在页面访问',
@@ -13,7 +13,7 @@ export default function Index({ ENV_VARIABLE }: {ENV_VARIABLE: string}) {
       <a href="https://github.com/vercel/next.js/tree/canary/examples/environment-variables">https://github.com/vercel/next.js/tree/canary/examples/environment-variables</a>
       <p>
         NEXT_PUBLIC_ 开头的可以在页面访问 { process.env.NEXT_PUBLIC_BASE_URL} <br />
-        ENV_ 开头的页面不能直接访问 process.env.ENV_VARIABLE 可以通过 getStaticProps 间接访问 {ENV_VARIABLE}
+        ENV_ 开头的页面不能直接访问 process.env.ENV_VARIABLE 通过 getStaticProps 间接访问也不行
       </p>
     </div>
   )
@@ -30,7 +30,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      ENV_VARIABLE: process.env.ENV_VARIABLE
+      // ENV_VARIABLE: process.env.ENV_VARIABLE || ''
     }
   }
 }
