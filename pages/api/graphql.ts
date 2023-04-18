@@ -6,14 +6,18 @@ const typeDefs = /* GraphQL */ `
   }
   type User {
     name: String
+    age: Int
   }
 `
 
 const resolvers = {
   Query: {
     users() {
-      return [{ name: 'Nextjs' }]
-    },
+      return [
+        { name: 'nextjs', age: 1 },
+        { name: 'vue', age: 2 }
+      ]
+    }
   },
 }
 
