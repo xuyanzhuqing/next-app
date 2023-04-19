@@ -1,4 +1,6 @@
 import useSWR from 'swr'
+import type { NextPageWithLayout } from './_app'
+import type { ReactElement } from 'react'
 
 const fetcher = (query: string) =>
   fetch('/api/graphql', {
@@ -17,7 +19,7 @@ type Data = {
   }[]
 }
 
-export default function Index() {
+ export const Index: NextPageWithLayout = () => {
   const { data, error, isLoading } = useSWR<Data>('{ users { name } }', fetcher)
 
   if (error) return <div>Failed to load</div>
@@ -32,5 +34,17 @@ export default function Index() {
         <div key={index}>{user.name}</div>
       ))}
     </div>
+  )
+}
+
+export default Index
+
+// 自定义页面
+Index.getLayout = (page: ReactElement) => {
+  return (
+    <>
+      <p>home page</p>
+      {page}
+    </>
   )
 }
