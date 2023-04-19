@@ -1,5 +1,5 @@
-import styles from '../styles/css-playground.module.scss'
-import variables from '../styles/variables.module.scss'
+import styles from 'styles/css-playground.module.scss'
+import variables from 'styles/variables.module.scss'
 
 function HelloWorld() {
   return (
