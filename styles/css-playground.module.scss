@@ -1,0 +1,7 @@
+@import "variables.module.scss";
+
+.error {
+  color: white;
+  background-color: red;
+  border: 1px solid $primary-color;
+}
