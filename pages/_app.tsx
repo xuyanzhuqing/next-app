@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/reset.css' // 作用全局，仅需引入一次
 import { useEffect } from "react"
+import Layout from '../components/layout'
 
 // 新创建的 `pages/_app.js` 文件中必须有此默认的导出（export）函数
 export default function MyApp({ Component, pageProps }) {
@@ -9,6 +10,8 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
+    <Layout>
       <Component {...pageProps} />
+    </Layout>
   )
 }
