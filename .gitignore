@@ -33,3 +33,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignore iconfont rest files
+/public/iconfont/*
+!/public/iconfont/iconfont.css
+!/public/iconfont/iconfont.ttf

@@ -22,7 +22,7 @@ const nextConfig = {
     ]
   },
   experimental: {
-    nextScriptWorkers: true,
+    // nextScriptWorkers: true,
   },
 }
 
