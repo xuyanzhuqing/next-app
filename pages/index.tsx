@@ -6,9 +6,9 @@ const fetcher = (query: string) =>
   fetch('/api/graphql', {
     method: 'POST',
     headers: {
-      'Content-type': 'application/json',
+      'Content-type': 'application/json'
     },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify({ query })
   })
     .then((res) => res.json())
     .then((json) => json.data)
@@ -19,7 +19,7 @@ type Data = {
   }[]
 }
 
- export const Index: NextPageWithLayout = () => {
+export const Index: NextPageWithLayout = () => {
   const { data, error, isLoading } = useSWR<Data>('{ users { name } }', fetcher)
 
   if (error) return <div>Failed to load</div>

@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
+  font-family: 'iconfont'; /* Project id  */
   src: url('iconfont.ttf?t=1681975362764') format('truetype');
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
+  font-family: 'iconfont' !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -12,14 +12,13 @@
 }
 
 .icon-tianranqi:before {
-  content: "\e624";
+  content: '\e624';
 }
 
 .icon-reshuiqi:before {
-  content: "\e625";
+  content: '\e625';
 }
 
 .icon-chouyouyanji:before {
-  content: "\e626";
+  content: '\e626';
 }
-

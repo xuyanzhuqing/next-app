@@ -1,4 +1,4 @@
-function fibonacci (num) {
+function fibonacci(num) {
   if (num === 1 || num === 2) {
     return num
   }

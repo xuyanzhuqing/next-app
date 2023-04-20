@@ -18,23 +18,23 @@ const resolvers = {
         { name: 'vue', age: 2 }
       ]
     }
-  },
+  }
 }
 
 const schema = createSchema({
   typeDefs,
-  resolvers,
+  resolvers
 })
 
 export const config = {
   api: {
     // Disable body parsing (required for file uploads)
-    bodyParser: false,
-  },
+    bodyParser: false
+  }
 }
 
 export default createYoga({
   schema,
   // Needed to be defined explicitly because our endpoint lives at a different path other than `/graphql`
-  graphqlEndpoint: '/api/graphql',
+  graphqlEndpoint: '/api/graphql'
 })

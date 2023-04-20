@@ -6,9 +6,9 @@ const fetcher = (query: string): Promise<Data> =>
   fetch('http://localhost:3000/api/graphql', {
     method: 'POST',
     headers: {
-      'Content-type': 'application/json',
+      'Content-type': 'application/json'
     },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify({ query })
   })
     .then((res) => res.json())
     .then((json) => json.data)
@@ -19,7 +19,7 @@ type Data = {
   }[]
 }
 
-export default function ({ users }: Data) {
+export default function StaticRender({ users }: Data) {
   return (
     <div>
       {users.map((user, index) => (

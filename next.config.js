@@ -15,7 +15,7 @@ const nextConfig = {
     remotePatterns: [
       {
         // protocol: 'https',
-        hostname: 'www.freepngimg.com',
+        hostname: 'www.freepngimg.com'
         // port: '443',
         // pathname: '/thumb/halloween/*'
       }
@@ -23,7 +23,7 @@ const nextConfig = {
   },
   experimental: {
     // nextScriptWorkers: true,
-  },
+  }
 }
 
 module.exports = nextConfig

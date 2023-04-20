@@ -1,4 +1,4 @@
-export default function () {
+export default function Footer() {
   return (
     <>
       <div className="footer-bg"></div>
@@ -7,9 +7,9 @@ export default function () {
           .footer-bg {
             width: 100%;
             height: 100px;
-            background-color: pink
+            background-color: pink;
           }
-       `}
+        `}
       </style>
     </>
   )

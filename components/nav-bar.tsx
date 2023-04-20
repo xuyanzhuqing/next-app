@@ -1,4 +1,4 @@
-export default function () {
+export default function NavBar() {
   return (
     <>
       <div className="nav-bar-bg"></div>
@@ -7,9 +7,9 @@ export default function () {
           .nav-bar-bg {
             width: 100%;
             height: 100px;
-            background-color: teal
+            background-color: teal;
           }
-       `}
+        `}
       </style>
     </>
   )
