@@ -20,7 +20,10 @@ const nextConfig = {
         // pathname: '/thumb/halloween/*'
       }
     ]
-  }
+  },
+  experimental: {
+    nextScriptWorkers: true,
+  },
 }
 
 module.exports = nextConfig
